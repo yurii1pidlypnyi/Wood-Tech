@@ -1,6 +1,12 @@
-// если вы хотите использовать sass-переменные - удалите root
-// colors
-:root {
-  --color-black: #000;
-  --color-white: #fff;
-}
+$accent: #F88500;
+$text: #333333;
+$dark: #202328;
+$deep: #171A1A;
+$dark-header: #6F7A8B;
+$dark-div: #2D3038;
+$light-bg: #FAFAFA;
+$light-disabled: #E4E6E8;
+$light-div: #E7E7E8;
+$middle-gray: rgba(#6F7A8B, 0.75);
+$text-light: #999999;
+$border-rad :0 5px;
