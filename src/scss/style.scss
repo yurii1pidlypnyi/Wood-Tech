@@ -19,6 +19,9 @@ $containerPadding: 30;
 // подключения компонентов страницы ===============================================================
 @import "./components/header";
 @import "./components/hero";
+@import "./components/trust";
+@import "./components/best-work";
+@import "./components/works-list";
 
 // подключения елементов ===============================================================
 @import "./components/burger";
