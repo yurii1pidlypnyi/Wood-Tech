@@ -27,3 +27,23 @@ new Swiper('.hero__slider', {
   //   draggable: true,
   // }
 });
+//Swiper Blog
+new Swiper ('.blog__slider',{
+  spaceBetween:20,
+  pagination: {
+    el: '.blog__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    1023:{
+      slidesPerView:3,
+    },
+    600:{
+      slidesPerView:2
+    },
+    320:{
+      slidesPerView:1
+    }
+
+  }
+})

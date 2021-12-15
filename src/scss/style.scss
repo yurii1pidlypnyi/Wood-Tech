@@ -22,10 +22,14 @@ $containerPadding: 30;
 @import "./components/trust";
 @import "./components/best-work";
 @import "./components/works-list";
+@import "./components/about";
+@import "./components/partners";
+@import "./components/blog";
+@import "./components/footer";
 
 // подключения елементов ===============================================================
 @import "./components/burger";
-
+@import "./components/elements";
 .container {
   max-width: $maxWidthContainer;
   margin: 0 auto;

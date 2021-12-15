@@ -1,0 +1,112 @@
+.about-short {
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding:70px 0 80px;
+    @media(max-width:900px){
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__img {
+    position: relative;
+    padding: 0 40% 46% 0;
+    @media(max-width:900px){
+      padding: 0;
+      width: 100%;
+      min-height: 400px;
+    }
+    img{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width:100%;
+      height:100%;
+      object-fit: cover;
+    }
+    @media(min-width:901px){
+      &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: -15px;
+        top: -15px;
+        width: 50%;
+        height: 50%;
+        background: $dark;
+        opacity: 0.1;
+        border-radius: $border-rad;
+        z-index: 0;
+      }
+    }
+  }
+
+  &__img--label {
+    position: absolute;
+    bottom: 60px;
+    right: -25px;
+    background: rgba(32, 35, 40, 0.9);
+    border-radius: $border-rad;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    @media(max-width:900px){
+      right: 0;
+    }
+    p{
+      margin-right: 10px;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 61px;
+      color: #FFFFFF;
+    }
+    span{
+      display: block;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 25px;
+      color: #FFFFFF;
+      max-width: 120px;
+    }
+  }
+
+  &__textblock {
+    margin-bottom: 30px;
+    @media(min-width:901px){
+      padding-left: 30px;
+      flex: 0 1 580px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.about {
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @media(max-width:450px){
+      align-items: center;
+    }
+  }
+
+  &__top {
+    display: flex;
+    max-width: 265px;
+    padding-bottom: 13px;
+    margin-bottom: 15px;
+    img{
+      margin-right: 16px;
+    }
+    border-bottom: 1px solid #E7E7E8;
+  }
+}
+

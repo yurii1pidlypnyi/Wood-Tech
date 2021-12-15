@@ -36,21 +36,3 @@
     max-width: 419px;
   }
 }
-
-.title-mini {
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: $accent;
-  margin-bottom: 5px;
-}
-.title {
-  font-weight: 800;
-  font-size: 29px;
-  line-height: 36px;
-  color: #FFFFFF;
-  @media(max-width:600px){
-    text-align: center;
-  }
-}
