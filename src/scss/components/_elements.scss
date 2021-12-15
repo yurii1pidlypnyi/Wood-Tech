@@ -99,6 +99,13 @@
   &:hover {
     color: $accent;
   }
+  &--center{
+    text-align: center;
+    margin: 0;
+  }
+  &--light{
+    color: $text-light;
+  }
 }
 .m-1{
   margin: 28px 0 35px;

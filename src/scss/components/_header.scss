@@ -32,6 +32,9 @@
     @media(max-width:850px){
       display: none;
     }
+    &--transparent{
+      background: transparent;
+    }
   }
 
   &__icon {
@@ -41,6 +44,12 @@
     transition: all 0.4s ease 0s;
     &:hover {
       fill: rgba(255, 255, 255, 1);
+    }
+    &--gray{
+      fill: $middle-gray;
+      &:hover {
+        fill: #6F7A8B;
+      }
     }
   }
 }
@@ -74,6 +83,16 @@
     &.active{
       background-color: rgba(196, 196, 196, 0.2);
     }
+    &.active-1{
+      background-color: $accent;
+    }
+    &--black {
+      color: $text;
+      &:hover{
+        background-color: $accent;
+        color: #FFFFFF;
+      }
+    }
   }
 }
 .logo{
@@ -83,4 +102,10 @@
 .navbar {
   position: relative;
   z-index: 3;
+}
+
+.header-1 {
+  position: relative;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
 }
