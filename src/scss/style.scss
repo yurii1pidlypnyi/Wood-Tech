@@ -27,15 +27,37 @@ $containerPadding: 30;
 @import "./components/blog";
 @import "./components/footer";
 @import "./components/projects";
+@import "./components/project";
+@import "./components/service";
+@import "./components/service-artcl";
 
 // подключения елементов ===============================================================
 @import "./components/burger";
 @import "./components/elements";
+//Основние стили ===================================================
 .container {
   max-width: $maxWidthContainer;
   margin: 0 auto;
   padding: 0 15px;
+  &-1{
+    max-width: 930px;
+    margin: 0 auto;
+  }
+  &-2 {
+    max-width: 740px;
+    margin: 0 auto;
+   }
+}
+.container-1 {
 }
 
-
-// подключения елементов ===============================================================
+.container-2 {
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+ flex: 1 1 auto;
+}

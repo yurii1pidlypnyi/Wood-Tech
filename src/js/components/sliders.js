@@ -44,6 +44,27 @@ new Swiper ('.blog__slider',{
     320:{
       slidesPerView:1
     }
+  }
+})
 
+//Swiper Project
+new Swiper ('.project__slider',{
+  slidesPerView: 1,
+  thumbs :{
+    swiper: {
+      el:'.project-mini__slider',
+      slidesPerView: 3.5,
+      freeMode: true,
+      watchSlidesProgress: true,
+      spaceBetween: 5,
+      breakpoints: {
+        576: {
+          slidesPerView: 5.5
+        },
+        768: {
+          slidesPerView: 7.5,
+        }
+      }
+    }
   }
 })
