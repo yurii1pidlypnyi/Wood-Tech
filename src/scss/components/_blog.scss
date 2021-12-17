@@ -20,13 +20,16 @@
     flex-direction: column;
   }
   &__item {
+    display: none;
     border: 1px solid #EEEEEE;
     border-radius: $border-rad;
     padding: 15px 15px 26px;
     height: auto;
     position: relative;
-    display: flex;
     flex-direction: column;
+    &.visible{
+      display: flex;
+    }
   }
   &__content {
     position: relative;

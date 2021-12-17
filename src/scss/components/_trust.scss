@@ -92,15 +92,8 @@
   }
 
   &__button {
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 145%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: $accent;
+    display: block;
     align-self: flex-end;
-    padding: 12px 30px;
     @media(max-width:765px){
       align-self: center;
     }

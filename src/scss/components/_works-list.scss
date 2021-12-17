@@ -2,6 +2,9 @@
   background: #FAFAFA;
   &__body {
     padding: 0 0 60px;
+    &.padding{
+      padding: 0;
+    }
   }
 }
 
@@ -9,11 +12,15 @@
 position: relative;
 top: -60px;
 display: grid;
-grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
+grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
 gap: 20px;
   &__item {
+    display: none;
     flex: 0 1 32%;
     background-color: #ffffff;
+    &.visible{
+      display: block;
+    }
     &:hover{
       .list-card__text{
         border-bottom: 3px solid $accent;
@@ -116,22 +123,4 @@ gap: 20px;
     line-height: 125%;
     text-decoration-line: underline;
   }
-}
-.more {
-  display: block;
-  margin: -15px auto 0;
-  padding: 12px 30px;
-  background: $accent;
-  border-radius: $border-rad;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 145%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  transition: all 0.4s ease 0s;
-  &:hover {
-    background: #ff8800;
-  }
-
 }
