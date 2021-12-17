@@ -30,6 +30,9 @@ $containerPadding: 30;
 @import "./components/project";
 @import "./components/service";
 @import "./components/service-artcl";
+@import "./components/company";
+@import "./components/feedback";
+@import "./components/contacts";
 
 // подключения елементов ===============================================================
 @import "./components/burger";
@@ -48,11 +51,7 @@ $containerPadding: 30;
     margin: 0 auto;
    }
 }
-.container-1 {
-}
 
-.container-2 {
-}
 .wrapper {
   display: flex;
   flex-direction: column;

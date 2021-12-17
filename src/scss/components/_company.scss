@@ -1,0 +1,135 @@
+.company {
+
+  &__body {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    @media(max-width:765px){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__side {
+    flex: 0 1 290px;
+    @media(max-width:765px){
+      margin-bottom: 40px;
+    }
+  }
+  &__tab{
+    display: none;
+    flex: 0 1 800px;
+    padding-left: 10px;
+    &.visible {
+      display: block;
+    }
+    @media(max-width:765px){
+      padding: 0;
+    }
+  }
+  &__nav {
+    background: #FAFAFA;
+    padding: 40px 0;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    padding: 0 10px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $text;
+  }
+
+  &__item {
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+    &.active {
+      background: $accent;
+      color:#ffff
+    }
+    &:hover{
+      background: $accent;
+      color:#ffff
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    transition: all 0.4s ease 0s;
+    &:hover{
+      background: $accent;
+      color:#ffff
+    }
+  }
+}
+
+//benefits
+.benefits {
+
+  &__list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+  }
+
+  &__item {
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      .title{
+        color: $accent;
+      }
+      .more-details {
+        color: $accent;
+      }
+    }
+  }
+
+  &__title {
+    max-width: 226px;
+    margin:15px auto 12px;
+  }
+}
+
+//partners-tab
+.partners {
+
+  &__list {
+    margin-top: 45px;
+  }
+
+  &__row {
+    display: flex;
+    &:not(:last-child){
+      margin-bottom: 40px;
+    }
+    @media(max-width:1023px){
+      flex-direction: column;
+    }
+    @media(max-width:600px){
+      text-align: center;
+    }
+  }
+  &__textblock {
+    margin-left: 20px;
+    @media(max-width:1023px){
+      margin: 20px 0 0 0;
+    }
+  }
+}

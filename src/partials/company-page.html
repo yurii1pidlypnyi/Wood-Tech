@@ -1,0 +1,20 @@
+<section class="company">
+  <div class="container">
+    <div class="company__body">
+      <div class="company__side">
+        <div class="company__nav">
+          <div class="company__title">Информация о нас</div>
+          <ul class="company__list">
+            <li class="company__item active" data-page="about">О компании</li>
+            <li class="company__item" data-page="benefits">Преимущества</li>
+            <li class="company__item" data-page="partners">Наши партнёры</li>
+            <li><a href="feedback.html" class="company__link">Обратная связь</a></li>
+          </ul>
+        </div>
+      </div>
+      @include('about.html')
+      @include('benefits.html')
+      @include('partners-tab.html')
+    </div>
+  </div>
+</section>

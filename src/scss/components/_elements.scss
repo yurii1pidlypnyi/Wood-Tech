@@ -88,6 +88,9 @@
   font-size: 19px;
   line-height: 22px;
   color: $text;
+  &--accent{
+    color: $accent;
+  }
 }
 .more-details {
   display: block;
@@ -153,4 +156,25 @@
 }
 .img4{
   padding: 0 0 46%;
+}
+
+.btn {
+  display: block;
+  margin: 70px auto 0;
+  padding: 12px 30px;
+  background: $accent;
+  border-radius: $border-rad;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 145%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all 0.4s ease 0s;
+  &:hover {
+    background: #ff8800;
+  }
+  &-m1{
+    margin: 30px auto 0;
+  }
 }
