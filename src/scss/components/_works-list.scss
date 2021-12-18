@@ -1,5 +1,5 @@
 .works-list {
-  background: #FAFAFA;
+  background: $light-bg;
   &__body {
     padding: 0 0 60px;
     &.padding{
@@ -108,7 +108,7 @@ gap: 20px;
       display: block;
       width: 5px;
       height: 5px;
-      background: #E4E6E8;
+      background: $light-disabled;
       border-radius: 50%;
       &:not(:last-child){
         margin-bottom: 10px;

@@ -191,7 +191,7 @@
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
-    color: #333333;
+    color: $text;
   }
 
   &__boss--photo {
@@ -199,7 +199,7 @@
     margin: 30px 0 25px;
     img {
       border-radius: 50%;
-      border: 5px solid #E4E6E8;
+      border: 5px solid $light-disabled;
   
     }
   }
@@ -218,7 +218,7 @@
   }
 
   &__info {
-    background: #FAFAFA;
+    background: $light-bg;
     border-radius: 0px 5px;
     padding: 40px 30px;
   }
